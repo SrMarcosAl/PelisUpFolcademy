@@ -1,40 +1,23 @@
-<!--
-<main>
-  <div class="Titulo">
-    <h1>PelisUP!</h1>
-    <h6>Plataforma para ver Peliculas y series</h6>
-  </div>
-
-  <div class="Buscador">
-    <h2>Buscador</h2>
-  </div>
-
-  <div class="Tab">
-    <ul class="menuTab">
-      <li><a href=""> <button>Todos</button> </a></li>
-      <li><a href=""><button>Peliculas</button></a></li>
-      <li><a href=""><button>Series</button></a></li>
-    </ul>
-  </div>
-</main> -->
-
 <app-header></app-header>
 <router-outlet></router-outlet> <!--Habilita el Routing-->
 <main>
+  <div class="Titulo">
+    <h1 class="mainTitle">PelisUP!</h1>
+    <h6 class="subTitle">Plataforma para ver Peliculas y series</h6>
+  </div>
+
+  <div class="Buscador">
+    <button class="button">buscador</button>
+    <input type="text">
+  </div>
+
+
+  <div class="Tab">
+    <app-tab></app-tab>
+  </div>
+
   <div class="ListCard">
-
-    <h3>Todos...</h3>
-
-    <div class="gridCard">
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-    </div>
-
+    <h3 class="listCardTitle">Todos...</h3>
+      <app-card class="gridCard"></app-card>
   </div>
 </main>

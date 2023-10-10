@@ -1,6 +1,5 @@
-<div class="Card">
-    <div class="Card_Img">
-      <div class="Card_Calificacion"></div>
-    </div>
-    <h6>Titulo de Pelicula</h6>
+<div class="card" *ngFor="let card of arrayInfoCard">
+  <img class="cardImg" src="{{card.urlImg}}" alt="">
+  <div class="cardCalificacion"></div>
+  <h6 class="nameCard" >{{card.name}}</h6>
 </div>

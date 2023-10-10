@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { infoCard } from './app-infoCard.model';
 
 @Component({ //decorador 
   selector: 'app-root', //nombre del componente 
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'desafio_1';
+  card:infoCard = new infoCard(1, "", "", "", 2, "");
 }
+

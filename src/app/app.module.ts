@@ -7,18 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './Components/layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { CardComponent } from './components/shared/card/card.component';
+import { TabComponent } from './components/shared/tab/tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,    // se agrega para porde utilizar el header
-    RouterModule
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
