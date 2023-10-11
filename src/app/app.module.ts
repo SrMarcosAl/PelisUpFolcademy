@@ -6,14 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './Components/layout/layout.module';
 import { RouterModule } from '@angular/router';
-import { CardComponent } from './components/shared/card/card.component';
-import { TabComponent } from './components/shared/tab/tab.component';
+import { RoutesModule } from './Components/routes/routes.module';
+import { SharedModule } from './Components/shared/shared.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardComponent,
-    TabComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +20,8 @@ import { TabComponent } from './components/shared/tab/tab.component';
     BrowserAnimationsModule,
     LayoutModule,    // se agrega para porde utilizar el header
     RouterModule,
+    RoutesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

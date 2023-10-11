@@ -5,6 +5,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { RouterModule } from '@angular/router';
 import { SeriesComponent } from './series/series.component';
 import { IngresarComponent } from './ingresar/ingresar.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { IngresarComponent } from './ingresar/ingresar.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class RoutesModule { }

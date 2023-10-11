@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { infoCard } from 'src/app/app-infoCard.model';
 
 interface IDataCard{
   id: number,
